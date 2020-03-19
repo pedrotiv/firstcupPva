@@ -1,0 +1,114 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs40\lang22 Overview of Enterprise Applications:\fs28\par
+\b0 The client tier consists of a client program that makes requests to the middle tier. The middle tier is divided into a web tier and a business tier, which handle client requests and process application data, storing it in a permanent data store in the data tier.\par
+Typically, multitiered applications have a client tier, a middle tier, and a data tier (often called the enterprise information systems tier). The client tier consists of a client program that makes requests to the middle tier. The middle tier is divided into a web tier and a business tier, which handle client requests and process application data, storing it in a permanent data store in the data tier.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\sa200\sl276\slmult1\ul\b The Client Tier\ulnone\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 Clients can be a web browser, a standalone application and other servers.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\sa200\sl276\slmult1\ul\b The Middle Tier \ulnone\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 The Web Tier \par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sl276\slmult1\b0 The web tier consists of components that handle the interaction between clients and the business tier. Its primary tasks are the following:\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sl276\slmult1 Dynamically generate content in various formats for the client\par
+{\pntext\f1\'B7\tab}Collect input from users of the client interface and return appropriate results from the components in the business tier\par
+{\pntext\f1\'B7\tab}Control the flow of screens or pages on the client\par
+{\pntext\f1\'B7\tab}Maintain the state of data for a user\rquote s session\par
+{\pntext\f1\'B7\tab}Perform some basic logic and hold some data temporarily in managed beans\b\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sl276\slmult1\b0 Above we list some of the main Java EE technologies that are used in the web tier in Java EE applications:\b\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sl276\slmult1\b0 JFS:\tab A user interface component framework for web applications that allows you to include UI components (such as fields and buttons) on a XHTML page, called a Facelets page; convert and validate UI component data; save UI component data to server-side data stores; and maintain component state.\b\par
+{\pntext\f1\'B7\tab}\b0 Expression Language: A set of standard tags used in Facelets pages to refer to Java EE components\b\par
+{\pntext\f1\'B7\tab}\b0 Servlets:\tab Java programming language classes that dynamically process requests and construct responses, usually for HTML pages.\b\par
+{\pntext\f1\'B7\tab}\b0 Contexts and Dependency Injection for Java EE: A set of contextual services that make it easy for developers to use enterprise beans along with JavaServer Faces technology in web applications.\b\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 The Business Tier \b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 The business tier consists of components that provide the business logic for an application. The following Java EE technologies are among those that are used in the business tier:\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 Enterprise JavaBeans (enterprise bean) components\par
+{\pntext\f1\'B7\tab}AX-RS RESTful web services\par
+{\pntext\f1\'B7\tab}Java Persistence API entities\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\sa200\sl276\slmult1\ul\b The EIS Tier. \ulnone\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 The EIS (Enterprise information System) tier consists of database servers, enterprise resource planning systems, and other legacy data sources, like mainframes. These resources typically are located on a separate machine from the Java EE server, and are accessed by components on the business tier. The following Java EE technologies are used to access the EIS tier in Java EE applications:\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 The Java Database Connectivity API (JDBC)\par
+{\pntext\f1\'B7\tab}The Java Persistence API\par
+{\pntext\f1\'B7\tab}The Java EE Connector Architecture\par
+{\pntext\f1\'B7\tab}The Java Transaction API (JTA)\par
+
+\pard\sa200\sl276\slmult1\par
+\par
+\par
+\b\fs40 Java EE Servers and Containers\par
+\b0\fs28 Java EE servers host several application component types that correspond to the tiers in a multitiered application. The Java EE server provides services to these components in the form of a container. Java EE containers are the interface between the component and the lower-level functionality provided by the platform to support that component. \par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\sa200\sl276\slmult1\b The Web Container\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 The web container is the interface between web components and the web server. A web component can be a servlet or a JavaServer Faces Facelets page. The container manages the component\rquote s life cycle, dispatches requests to application components, and provides interfaces to context data, such as information about the current request.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\sa200\sl276\slmult1\b The EJB Container\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 The EJB container is the interface between enterprise beans, which provide the business logic in a Java EE application, and the Java EE server. The EJB container runs on the Java EE server and manages the execution of an application\rquote s enterprise beans.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\sa200\sl276\slmult1\b The Application Client Container\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 The application client container is the interface between Java EE application clients (special Java SE applications that use Java EE server components) and the Java EE server. The application client container runs on the client machine and is the gateway between the client application and the Java EE server components that the client uses.\par
+
+\pard\sa200\sl276\slmult1\par
+\b\par
+\fs40 Architecture of the Example Applications\par
+\b0\fs28 The example applications consist of four main components: \par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\sa200\sl276\slmult1 In module ducks-age:\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 DukesAgeResource, a JAX-RS RESTful web service; (business tier)\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 DukesAgeResource.java is a JAX-RS resource that calculates the age of Duke, the Java mascot. Duke was born May 23, 1995\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\sa200\sl276\slmult1 In module firstcup-war\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 DukesBirthdayBean, an enterprise bean; (business tier)\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 DukesBirthdayBean.java is a local, no-interface view stateless session bean that calculates the difference between the user\rquote s age and Duke\rquote s age and stores the user-submitted data in a Java Persistence API entity.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 FirstcupUser, a Java Persistence API entity; (business tier)\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 FirstcupUser.java is a Java Persistence API entity that represents a particular user\rquote s birthday. It is stored in an Apache Derby table and managed by the DukesBirthdayBean business methods.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Firstcup-war, a web application created with JavaServer Faces thecnology (web tier)\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1080\sa200\sl276\slmult1 The firstcup-war web application is a JavaServer Faces Facelets application that accesses DukesAgeResource to display Duke\rquote s age, reads in a date provided by the user, accesses DukesBirthdayBean to calculate who is older, and then displays the difference in years between the user and Duke and the average age difference of all users. The firstcup-war web application consists of the following:\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\sa200\sl276\slmult1 greeting.xhtml: A Facelets-enabled XHTML page, which is a page that uses the JavaServer Faces Facelets tag libraries. Users can type their birth date in a field and submit it for comparison against Duke\rquote s birth date.\par
+{\pntext\f1\'B7\tab}response.xhtml: A Facelets-enabled XHTML page that tells the user whether he or she is older or younger than Duke, based on the date the user entered in the greeting.xhtml page, and displays the average age difference of all users.\par
+{\pntext\f1\'B7\tab}DukesBDay.java: A CDI managed bean that defines properties to hold the user\rquote s birth date, uses the JAX-RS Client API to get Duke\rquote s current age from the DukesAgeResource web service, and calculates the age difference between the user and Duke from the enterprise bean.\par
+{\pntext\f1\'B7\tab}web.xml: The web application\rquote s deployment descriptor, which is used to configure certain aspects of a web application when it is installed. In this case, it is used to provide a mapping to the application\rquote s FacesServlet instance, which accepts incoming requests, passes them to the life cycle for processing, and initializes resources. It also specifies greeting.xhtml as the welcome file for the application.\par
+{\pntext\f1\'B7\tab}WebMessages.properties and WebMessages_es.properties: Java programming language properties files that contain the localized strings used in greeting.xhtml and response.xhtml. By default, the English language strings in WebMessages.properties are used, but Spanish language strings are also provided in WebMessages_es.properties.\par
+{\pntext\f1\'B7\tab}DukesBirthdayBean.java: as described above, the enterprise bean packaged within the firstcup-war application. DukesBirthdayBean calculates the difference between the user\rquote s birthday and Duke\rquote s birthday.\par
+
+\pard\sa200\sl276\slmult1\par
+\par
+\b\fs40 Coding the dukes-age Module Application:\b0\fs28\par
+This section describes how to code the dukes-age example application, a web application containing a JAX-RS RESTful web service endpoint.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\sa200\sl276\slmult1 Creating the Web Service:\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\par
+
+\pard\sa200\sl276\slmult1\par
+\par
+\par
+\b\par
+\par
+\par
+\b0\fs22\par
+}
+ 
